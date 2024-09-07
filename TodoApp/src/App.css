@@ -1,0 +1,82 @@
+.todoApp{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    color: white;
+    flex-wrap: wrap;
+}
+
+.components{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    border: 2px solid brown;
+    height: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.components h1 {
+    font-size: xx-large;
+    font-weight: 700;
+    font-style: oblique;
+    margin-bottom: 50px;
+}
+
+
+.todocomponents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.todocomponents input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid black;
+    color: cornsilk;
+    background: transparent;
+}
+
+
+.todocomponents button {
+    padding: 11px;
+    background-color: brown;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.todolist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.todolist ul li {
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+}
+
+.todolist ul li h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+
+/* .todolist ul li button li{
+    color: brown;
+    font-weight: 700;
+} */
