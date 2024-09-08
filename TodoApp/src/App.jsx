@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faCoffee, faImage, faTrashCanArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faCoffee, faImage, faTrashCanArrowUp,faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 function App() {
   const [input, setinput] = useState('');
@@ -27,6 +28,17 @@ function App() {
     }))
   }
 
+  let handlecompleteuppercase = (id) => {
+    settodos((prevTodos) => {
+      return prevTodos.map((todo) => {
+        if (todo.id == id) {
+          return { ...todo, text: todo.text.toUpperCase() }
+        }else {
+          return todo;
+        }
+      })
+    })
+  }
 
 
   return (
@@ -49,15 +61,15 @@ function App() {
                   <h3 >{todo.text}</h3>
                   <button onClick={()=> handleremove(todo.id)}><FontAwesomeIcon className='text-red-500 font-extrabold' icon={faTrashCanArrowUp} /></button>
                   <button onClick={() => {handlecomplete(todo.id)}}><FontAwesomeIcon className='text-red-500 font-extrabold' icon={faCheck} /></button>
+                  <button onClick={ () => {handlecompleteuppercase(todo.id)}}><FontAwesomeIcon className='text-red-500 font-extrabold'   icon={faArrowUp}/></button>
                 </li>
-
                 )
               })}
 
             </ul>
           </div>
         </div>
-      </div>
+      </div>   
     </>
   );
 }
