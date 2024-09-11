@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    font-family: monospace;
+}
+
+.lottery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lottery h1 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.lottery h2 {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.lottery button {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(177, 13, 13);
+    font-weight: 500;
+    color:seashell;
+}
+
+
+.lottery button:hover {
+    background-color: rgb(56, 19, 19);
+}
+
+.lottery h3 {
+    font-size: large;
+    font-weight: 600;
+}
