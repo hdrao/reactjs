@@ -1,5 +1,5 @@
 import InfoBox from "./InfoBox";
-import SearchBox from "./Weather.jsx";
+import SearchBox from "./weather";
 import { useState } from "react";
 
 
@@ -21,7 +21,7 @@ function WeatherApp () {
     }
 
     return (
-        <div className="weather justify-center flex flex-col items-center w-screen">
+        <div className="weather">
 
                  <SearchBox updInfo={updateWeather} />
                  <InfoBox infoofweather={weatherInfo} />

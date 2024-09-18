@@ -40,7 +40,7 @@ function SearchBox({updInfo}) {
 
 
     return (
-        <div className="search-box  h-full mt-2 mb-6 flex-wrap  flex justify-center">
+        <div className="search-box  h-full mt-20 mb-6 flex-wrap  flex justify-center">
             <form onSubmit={onsbm} className='flex flex-col gap-3 justify-center items-center' action="">
                 <TextField id="outlined-basic" label="City Name"
                     value={Wcity}
