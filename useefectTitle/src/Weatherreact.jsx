@@ -1,5 +1,5 @@
 import InfoBox from "./InfoBox";
-import SearchBox from "./weather";
+import SearchBox from "./Weather.jsx";
 import { useState } from "react";
 
 
